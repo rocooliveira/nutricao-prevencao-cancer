@@ -1,16 +1,17 @@
 import Head from 'next/head';
+import { Text } from '@chakra-ui/react';
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Alimentos que ajudam a previnir o surgimento do câncer</title>
       </Head>
 
       <main>
-        <h1>
-          Welcome to teste <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <Text fontSize="4xl">
+          Alimentos que ajudam a previnir o surgimento do câncer
+        </Text>
       </main>
     </div>
   );

@@ -1,5 +1,7 @@
 import Head from 'next/head';
-import { Text } from '@chakra-ui/react';
+import { Flex, Box, Image, Text } from '@chakra-ui/react';
+import { Header } from '../components/Header';
+import styles from '../styles/common.module.css';
 
 export default function Home() {
   return (
@@ -9,9 +11,17 @@ export default function Home() {
       </Head>
 
       <main>
-        <Text fontSize="4xl">
-          Alimentos que ajudam a previnir o surgimento do câncer
-        </Text>
+        <Header />
+        <Flex p="6">
+          <Box>
+            <Text color="green.400" fontSize="xl" fontFamily="Fira Sans">
+              SEMINARIO MULTIDISCIPLINAR
+            </Text>
+            <Text fontSize="5xl" fontFamily="Fira Sans">
+              Alimentos que ajudam a previnir o surgimento do câncer
+            </Text>
+          </Box>
+        </Flex>
       </main>
     </div>
   );

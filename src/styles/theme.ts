@@ -9,4 +9,8 @@ export const theme = extendTheme({
       },
     },
   },
+  fonts: {
+    heading: 'Fira Sans',
+    body: 'Open Sans',
+  },
 });

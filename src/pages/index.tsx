@@ -12,15 +12,32 @@ export default function Home() {
 
       <main>
         <Header />
-        <Flex p="6">
+
+        <Flex>
           <Box>
-            <Text color="green.400" fontSize="xl" fontFamily="Fira Sans">
-              SEMINARIO MULTIDISCIPLINAR
-            </Text>
-            <Text fontSize="5xl" fontFamily="Fira Sans">
-              Alimentos que ajudam a previnir o surgimento do câncer
-            </Text>
+            <Image
+              className={styles.mainImage}
+              w="101%"
+              h="md"
+              src="https://raw.githubusercontent.com/rocooliveira/nutricao-prevencao-cancer/master/public/slide_01.jpg"
+            />
           </Box>
+
+          <Flex p="6">
+            <Box>
+              <Text color="white" fontSize="xl" fontFamily="Fira Sans">
+                SEMINARIO MULTIDISCIPLINAR
+              </Text>
+              <Text
+                fontSize="5xl"
+                fontFamily="Fira Sans"
+                fontWeight={600}
+                color="white"
+              >
+                Alimentos que ajudam a previnir o surgimento do câncer
+              </Text>
+            </Box>
+          </Flex>
         </Flex>
       </main>
     </div>

@@ -23,7 +23,7 @@ export function Header() {
             <Text fontSize="xl">Nutrição</Text>
 
             <Text fontSize="sm" fontWeight={300} pb={4}>
-              Teste teste
+              Lorem ipsum dolor sit amet
             </Text>
           </Stack>
         </Stack>

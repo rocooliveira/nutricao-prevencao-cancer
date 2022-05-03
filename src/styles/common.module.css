@@ -22,12 +22,16 @@
   animation: zoom 50s;
 }
 
+.boxMainImage {
+  overflow: hidden;
+}
+
 .mainImage {
   position: absolute;
   opacity: 0.8;
   object-fit: cover;
   filter: brightness(30%);
-  -webkit-animation: zoom 50s; /* Chrome, Safari, Opera */
-  animation: zoom 50s;
+  /* -webkit-animation: zoom 50s; Chrome, Safari, Opera */
+  /* animation: zoom 50s; */
   z-index: -1;
 }

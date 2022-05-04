@@ -138,7 +138,7 @@ const Slider = ({
   children,
   gap,
 }) => {
-  const [ref, { width }] = useBoundingRect();
+  const [ref, { width }] = useBoundingRect(100);
 
   useLayoutEffect(
     () => initSliderWidth(Math.round(width)),
@@ -192,7 +192,7 @@ const Slider = ({
         {children}
       </Box>
 
-      <Flex w={`${itemWidth}px`} mt={`${gap / 2}px`} mx="auto" w="100%">
+      <Flex  mt={`${gap / 2}px`} mx="auto" w="100%">
         <Button
           onClick={handleDecrementClick}
           onFocus={handleFocus}
@@ -296,7 +296,7 @@ const Track = ({
   };
 
   const handleResize = useCallback(
-    () =>
+    (positions) =>
       controls.start({
         x: positions[activeItem],
         transition: {

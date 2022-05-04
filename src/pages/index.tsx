@@ -14,6 +14,7 @@ import {
 import { Header } from '../components/Header';
 import { CheckItem } from '../components/CheckItem';
 import { IconCard } from '../components/IconCard';
+import { Footer } from '../components/Footer';
 
 import styles from '../styles/common.module.css';
 
@@ -284,6 +285,8 @@ export default function Home() {
             </Box>
           </Stack>
         </Stack>
+
+        <Footer />
       </main>
     </div>
   );

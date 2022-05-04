@@ -167,19 +167,19 @@ export default function Home() {
           </Flex>
 
           {/* Dicas */}
-          <Stack pt={6} spacing={6}>
+          <Stack pt={6} spacing={8}>
             <Flex px={6} direction="column">
               <Stack spacing={6}>
                 <Box textAlign="center">
                   <Text
                     fontFamily="Fira Sans"
                     color="green.400"
-                    fontSize="xl"
+                    fontSize={['2xl', '4xl']}
                     lineHeight="70%"
                   >
                     Dicas
                   </Text>
-                  <Text fontSize="2xl" fontWeight="bold">
+                  <Text fontSize={['2xl', '5xl']} fontWeight="bold">
                     Pratique exercícios
                   </Text>
                 </Box>
@@ -192,11 +192,19 @@ export default function Home() {
                 >
                   <Box p={4}>
                     <Stack direction="row" align="center">
-                      <Icon as={RiTimeLine} fontSize="4xl" color="green.200" />
-                      <Text color="white" fontSize="md" fontFamily="Fira Sans">
+                      <Icon
+                        as={RiTimeLine}
+                        fontSize={['4xl', '6xl']}
+                        color="green.200"
+                      />
+                      <Text
+                        color="white"
+                        fontSize={['md', '4xl']}
+                        fontFamily="Fira Sans"
+                      >
                         30 min/dia
                       </Text>
-                      <Text as="small" color="white">
+                      <Text fontSize={['sm', '2xl']} color="white">
                         (Recomendação OMS)
                       </Text>
                     </Stack>
@@ -204,7 +212,7 @@ export default function Home() {
                   <Box textAlign="right" pr={4} pb={4}>
                     <Text
                       as="b"
-                      fontSize="xl"
+                      fontSize={['xl', '4xl']}
                       fontFamily="Fira Sans"
                       color="white"
                     >
@@ -213,7 +221,6 @@ export default function Home() {
                     </Text>
                   </Box>
                 </Stack>
-                {/* </Box> */}
               </Stack>
             </Flex>
 
@@ -223,46 +230,34 @@ export default function Home() {
                   <Text
                     fontFamily="Fira Sans"
                     color="green.400"
-                    fontSize="xl"
+                    fontSize={['xl', '4xl']}
                     lineHeight="70%"
                   >
                     Dicas
                   </Text>
-                  <Text fontSize="2xl" fontWeight="bold">
-                    Pratique exercícios
+                  <Text fontSize={['2xl', '5xl']} fontWeight="bold">
+                    Tenha bons hábitos alimentares.
                   </Text>
                 </Box>
 
                 <Stack
                   direction="column"
-                  justify="space-between"
+                  justify="flex-end"
                   minH={500}
                   className={styles.imgFitnessDark}
                 >
-                  <Box p={4}>
-                    <Stack direction="row" align="center">
-                      <Icon as={RiTimeLine} fontSize="4xl" color="green.200" />
-                      <Text color="white" fontSize="md" fontFamily="Fira Sans">
-                        30 min/dia
-                      </Text>
-                      <Text as="small" color="white">
-                        (Recomendação OMS)
-                      </Text>
-                    </Stack>
-                  </Box>
                   <Box textAlign="right" pr={4} pb={4}>
                     <Text
                       as="b"
-                      fontSize="xl"
+                      fontSize={['xl', '4xl']}
                       fontFamily="Fira Sans"
                       color="white"
                     >
-                      Para que sua vida fique ainda mais saudável, pratique
-                      atividades fisicas caso não tenha restrições médicas
+                      Uma alimentação saudável previne vários tipos de doenças
+                      não transmissíveis, incluindo o câncer.
                     </Text>
                   </Box>
                 </Stack>
-                {/* </Box> */}
               </Stack>
             </Flex>
           </Stack>

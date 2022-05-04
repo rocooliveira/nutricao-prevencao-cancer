@@ -1,7 +1,17 @@
 import Head from 'next/head';
-import { Flex, Box, Stack, Image, Text, Icon } from '@chakra-ui/react';
+import { Flex, Box, Stack, Image, Text } from '@chakra-ui/react';
 import { RiInkBottleFill, RiInkBottleLine } from 'react-icons/ri';
-import { GiBroccoli, GiStrawberry, GiPeanut } from 'react-icons/gi';
+
+import {
+  GiBroccoli,
+  GiStrawberry,
+  GiOlive,
+  GiPeanut,
+  GiPowderBag,
+  GiTomato,
+  GiGarlic,
+  GiFlatfish,
+} from 'react-icons/gi';
 import { Header } from '../components/Header';
 import { CheckItem } from '../components/CheckItem';
 import { IconCard } from '../components/IconCard';
@@ -69,12 +79,7 @@ export default function Home() {
                 </Text>
               </Flex>
 
-              <Stack
-                bg="orange.50"
-                direction="column"
-                spacing={8}
-                p={6}
-              >
+              <Stack bg="orange.50" direction="column" spacing={8} p={6}>
                 <IconCard
                   position="relative"
                   left="0.8rem"
@@ -104,7 +109,59 @@ export default function Home() {
                   right="0.6rem"
                   title="Oleaginosas"
                   desc="Contem em sua composição o selênio, um potente antioxidante. Auxiliando na redução de biomarcadores relacionados a inflamação."
-                  icon={RiInkBottleFill}
+                  icon={GiPeanut}
+                />
+
+                <IconCard
+                  position="relative"
+                  left="0.6rem"
+                  title="Alho"
+                  desc="O seu composto chamado alicina, ajuda na eliminação de toxinas e bacterias. Fortificando assim a imunidade."
+                  icon={GiGarlic}
+                />
+              </Stack>
+
+              <Stack bg="white" direction="column" spacing={8} px={6} py={3}>
+                <Box position="relative" mt="-3.5rem" mb="-2.5rem">
+                  <Image src="https://raw.githubusercontent.com/rocooliveira/nutricao-prevencao-cancer/master/public/eating-healthy-food.svg" />
+                </Box>
+
+                <IconCard
+                  position="relative"
+                  left="0.6rem"
+                  title="Azeite Extra Virgem"
+                  desc="Ajudam na diminuição do surgimento  de câncer (mecanismo desconhecido)."
+                  icon={GiOlive}
+                />
+
+                <IconCard
+                  position="relative"
+                  right="0.6rem"
+                  title="Curcuma"
+                  desc="Possui capacidade antioxidante, atuando na diminuição da resposta inflamatória e fortalecendo o organismo."
+                  icon={RiInkBottleLine}
+                />
+                <IconCard
+                  position="relative"
+                  left="0.6rem"
+                  title="Linhaça"
+                  desc="Rica em lignanas. Fotoquímicos que se ligam ao estrógeno e assim impedem que ele se prolifere em grande quantidade."
+                  icon={GiPowderBag}
+                />
+                <IconCard
+                  position="relative"
+                  right="0.6rem"
+                  title="Tomate"
+                  desc="Rico em licopeno, um tipo de corante lipossolúvel natural, com potencia antioxidante."
+                  icon={GiTomato}
+                />
+
+                <IconCard
+                  position="relative"
+                  right="0.6rem"
+                  title="Peixes"
+                  desc="Peixes como sardinha, cavala, atum são ricos em ômega 3 e vitamida D. Fortalecendo o organismo e previnido o câncer, por ação anti-inflamatória."
+                  icon={GiFlatfish}
                 />
               </Stack>
             </Stack>

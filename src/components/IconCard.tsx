@@ -22,13 +22,13 @@ export function IconCard({ title, desc, icon, ...rest }: CardProps) {
     >
       <HStack>
         <Box>
-          <Icon as={icon} fontSize={46} color="green.400" />
+          <Icon as={icon} fontSize={[46, 70]} color="green.400" />
         </Box>
         <Box>
-          <Heading fontSize="xl" lineHeight={0}>
+          <Heading fontSize={['xl', '3xl']} lineHeight={0}>
             {title}
           </Heading>
-          <Text mt={4} fontSize="sm">
+          <Text mt={4} fontSize={['sm', '2xl']}>
             {desc}
           </Text>
         </Box>

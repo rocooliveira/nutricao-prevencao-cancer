@@ -15,6 +15,7 @@ import { Header } from '../components/Header';
 import { CheckItem } from '../components/CheckItem';
 import { IconCard } from '../components/IconCard';
 import CardSlider from '../components/CardSlider';
+import { ProfileCard } from '../components/ProfileCard';
 import { Footer } from '../components/Footer';
 
 import team from '../utils/team';
@@ -298,31 +299,26 @@ export default function Home() {
         </Stack>
 
         <Stack py={8} px={6}>
+          <Box textAlign="center" pb={4}>
+            <Text
+              fontFamily="Fira Sans"
+              color="green.400"
+              fontSize={['2xl', '4xl']}
+              lineHeight="70%"
+            >
+              Alunos
+            </Text>
+            <Text fontSize={['2xl', '5xl']} fontWeight="bold">
+              Integrandes desta equipe
+            </Text>
+          </Box>
           <CardSlider gap={32}>
-            {team.map((post, index) => (
-              <Box
+            {team.map((people, index) => (
+              <ProfileCard
                 key={index}
-                p={6}
-                mx="auto"
-                py={[6, 12]}
-                w="80%"
-                bg="white"
-                borderRadius="lg"
-                shadow="md"
-                borderWidth="1px"
-              >
-                <Stack direction="row">
-                  <Box></Box>
-                  <Box>
-                    <Heading fontSize={['xl', '3xl']} lineHeight={0}>
-                      {post.title}
-                    </Heading>
-                    <Text mt={4} fontSize={['sm', '2xl']}>
-                      teste
-                    </Text>
-                  </Box>
-                </Stack>
-              </Box>
+                name={people.name}
+                pictureUrl={people.pictureUrl}
+              />
             ))}
           </CardSlider>
         </Stack>

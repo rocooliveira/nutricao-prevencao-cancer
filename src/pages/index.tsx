@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import { Flex, Box, Stack, Image, Text, Icon } from '@chakra-ui/react';
+import { RiInkBottleFill, RiInkBottleLine } from 'react-icons/ri';
+import { GiBroccoli, GiStrawberry, GiPeanut } from 'react-icons/gi';
 import { Header } from '../components/Header';
 import { CheckItem } from '../components/CheckItem';
 import { IconCard } from '../components/IconCard';
@@ -52,11 +54,11 @@ export default function Home() {
               </Stack>
             </Stack>
 
-            <Stack bg="orange.50" pt={6} px={6}>
+            <Stack bg="white" pt={6}>
               <Flex direction="column" textAlign="center" p={5}>
                 <Text
                   fontFamily="Fira Sans"
-                  color="green.300"
+                  color="green.4peanut00"
                   fontSize="xl"
                   lineHeight="70%"
                 >
@@ -67,9 +69,39 @@ export default function Home() {
                 </Text>
               </Flex>
 
-              <Flex>
-                <IconCard title="teste" desc="testando" />
-              </Flex>
+              <Stack bg="orange.50" direction="column" spacing={8} p={6}>
+                <IconCard
+                  position="relative"
+                  left="0.8rem"
+                  title="Brócolis"
+                  desc="Um alimento rico em sulforafano, um nutriente que diminui a agressividade e o crescimento do câncer."
+                  icon={GiBroccoli}
+                />
+
+                <IconCard
+                  position="relative"
+                  right="0.6rem"
+                  title="Frutas Vermelhas"
+                  desc="Corante natural antocianina, potente antiocidante que ajuda na prevenção do câncer. (morango, amora, cereja...)"
+                  icon={GiStrawberry}
+                />
+
+                <IconCard
+                  position="relative"
+                  left="0.6rem"
+                  title="Canela"
+                  desc="A canela em pau ou em pó consegue induzir  a morte programada das células canceriginas (mutações)."
+                  icon={RiInkBottleFill}
+                />
+
+                <IconCard
+                  position="relative"
+                  right="0.6rem"
+                  title="Oleaginosas"
+                  desc="Contem em sua composição o selênio, um potente antioxidante. Auxiliando na redução de biomarcadores relacionados a inflamação."
+                  icon={RiInkBottleFill}
+                />
+              </Stack>
             </Stack>
           </Flex>
         </Stack>

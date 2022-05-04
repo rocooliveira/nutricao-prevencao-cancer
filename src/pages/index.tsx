@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { Flex, Box, Stack, Image, Text, Icon } from '@chakra-ui/react';
 import { Header } from '../components/Header';
 import { CheckItem } from '../components/CheckItem';
+import { IconCard } from '../components/IconCard';
 
 // import styles from '../styles/common.module.css';
 
@@ -64,6 +65,10 @@ export default function Home() {
                 <Text fontSize="2xl" fontWeight="bold">
                   Conheça os campeões
                 </Text>
+              </Flex>
+
+              <Flex>
+                <IconCard title="teste" desc="testando" />
               </Flex>
             </Stack>
           </Flex>

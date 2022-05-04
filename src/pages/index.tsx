@@ -209,7 +209,7 @@ export default function Home() {
                       </Text>
                     </Stack>
                   </Box>
-                  <Box textAlign="right" pr={4} pb={4}>
+                  <Box textAlign="right" px={4} pb={4}>
                     <Text
                       as="b"
                       fontSize={['xl', '4xl']}
@@ -244,9 +244,9 @@ export default function Home() {
                   direction="column"
                   justify="flex-end"
                   minH={500}
-                  className={styles.imgFitnessDark}
+                  className={styles.imgGoodEatingDark}
                 >
-                  <Box textAlign="right" pr={4} pb={4}>
+                  <Box textAlign="right" px={4} pb={4}>
                     <Text
                       as="b"
                       fontSize={['xl', '4xl']}

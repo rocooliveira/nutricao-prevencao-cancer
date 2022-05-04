@@ -1,12 +1,15 @@
-.imgFitnessDark {
+.imgFitnessDark,
+.imgGoodEatingDark {
   position: relative;
   width: 100%;
 }
 
-.imgFitnessDark > div {
+.imgFitnessDark > div,
+.imgGoodEatingDark > div {
   z-index: 10;
 }
-.imgFitnessDark::before {
+.imgFitnessDark::before,
+.imgGoodEatingDark::before {
   content: '';
   border-radius: 0.8rem 0 0.8rem 0.8rem;
   background-image: url('https://raw.githubusercontent.com/rocooliveira/nutricao-prevencao-cancer/master/public/fitness.jpg');
@@ -18,5 +21,9 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  filter: brightness(0.5);
+  filter: brightness(0.55);
+}
+
+.imgGoodEatingDark::before {
+  background-image: url('https://raw.githubusercontent.com/rocooliveira/nutricao-prevencao-cancer/master/public/good-eating-habits.jpg');
 }

@@ -1,6 +1,8 @@
 import Head from 'next/head';
-import { Flex, Box, Stack, Text } from '@chakra-ui/react';
+import { Flex, Box, Stack, Image, Text, Icon } from '@chakra-ui/react';
 import { Header } from '../components/Header';
+import { CheckItem } from '../components/CheckItem';
+
 // import styles from '../styles/common.module.css';
 
 export default function Home() {
@@ -13,7 +15,7 @@ export default function Home() {
       <main>
         <Header />
 
-        <Flex p="6">
+        <Flex p="6" direction="column" mb={8}>
           <Stack spacing={3}>
             <Text
               color="white"
@@ -34,6 +36,21 @@ export default function Home() {
               sodales consequat velit eget dictum. Integer ornare magna vitae
               eleifend congue.
             </Text>
+          </Stack>
+        </Flex>
+
+        <Flex direction="column">
+          <Stack bg="white" w="100%" p="6">
+            <Image src="https://raw.githubusercontent.com/rocooliveira/nutricao-prevencao-cancer/master/public/img1.jpg" />
+
+            <Stack direction="row" justifyContent="center">
+              <Box>
+                <CheckItem>Frutas</CheckItem>
+                <CheckItem>Verduras e Legumes</CheckItem>
+                <CheckItem>Fibras</CheckItem>
+                <CheckItem>Proteínas fonte de ômega3</CheckItem>
+              </Box>
+            </Stack>
           </Stack>
         </Flex>
       </main>

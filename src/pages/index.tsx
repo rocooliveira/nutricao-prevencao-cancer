@@ -64,7 +64,7 @@ export default function Home() {
               </Stack>
             </Stack>
 
-            <Stack bg="white" pt={6}>
+            <Stack bg="white" py={6}>
               <Flex direction="column" textAlign="center" p={5}>
                 <Text
                   fontFamily="Fira Sans"
@@ -165,6 +165,10 @@ export default function Home() {
                 />
               </Stack>
             </Stack>
+          </Flex>
+
+          <Flex p={6} direction="column">
+            <Text>teste</Text>
           </Flex>
         </Stack>
       </main>

@@ -23,7 +23,7 @@ export function ProfileCard({ name, pictureUrl, ...rest }: ProfileCardProps) {
           <Avatar {...name} size="3xl" src={pictureUrl} />
         </Box>
         <Box>
-          <Heading fontSize={['xl', '3xl']} pb={}>
+          <Heading fontSize={['xl', '3xl']} pb={4}>
             {name}
           </Heading>
         </Box>

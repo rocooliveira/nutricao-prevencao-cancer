@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Flex, Box, Stack, Image, Text, Icon, Heading } from '@chakra-ui/react';
+import { Flex, Box, Stack, Image, Text, Icon } from '@chakra-ui/react';
 import { RiInkBottleFill, RiInkBottleLine, RiTimeLine } from 'react-icons/ri';
 import {
   GiBroccoli,

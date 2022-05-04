@@ -263,7 +263,6 @@ export default function Home() {
           </Stack>
 
           {/* HELP IMMUNITY  */}
-
           <Stack px={6} py={10} bg="orange.50">
             <Box textAlign="center">
               <Text

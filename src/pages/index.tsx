@@ -278,6 +278,10 @@ export default function Home() {
                 prevenção do câncer."
               </Text>
             </Box>
+
+            <Box>
+              <Image src="https://raw.githubusercontent.com/rocooliveira/nutricao-prevencao-cancer/master/public/breast-cancer-awareness-animate.svg" />
+            </Box>
           </Stack>
         </Stack>
       </main>

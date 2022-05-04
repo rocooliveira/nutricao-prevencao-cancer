@@ -1,6 +1,5 @@
 import { Heading, HStack, Box, Text, BoxProps, Icon } from '@chakra-ui/react';
 
-import { IconBaseProps } from 'react-icons';
 import { FunctionComponent } from 'react';
 
 interface CardProps extends BoxProps {

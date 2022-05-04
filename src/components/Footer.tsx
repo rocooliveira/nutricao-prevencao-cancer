@@ -15,7 +15,7 @@ import styles from '../styles/common.module.css';
 
 export function Footer() {
   return (
-    <footer>
+    <footer style={{ marginTop: -30 }}>
       <Stack>
         <Box className={styles.footerOverlayMainWaves} />
         <Box className={styles.footerOverlayBlackWaves} />

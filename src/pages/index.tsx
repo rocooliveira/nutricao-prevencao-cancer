@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Flex, Box, Stack, Image, Text, Icon } from '@chakra-ui/react';
+import { Flex, Box, Stack, Image, Text, Icon, Heading } from '@chakra-ui/react';
 import { RiInkBottleFill, RiInkBottleLine, RiTimeLine } from 'react-icons/ri';
 import {
   GiBroccoli,
@@ -14,7 +14,10 @@ import {
 import { Header } from '../components/Header';
 import { CheckItem } from '../components/CheckItem';
 import { IconCard } from '../components/IconCard';
+import CardSlider from '../components/CardSlider';
 import { Footer } from '../components/Footer';
+
+import team from '../utils/team';
 
 import styles from '../styles/common.module.css';
 
@@ -292,6 +295,36 @@ export default function Home() {
               <Image src="https://raw.githubusercontent.com/rocooliveira/nutricao-prevencao-cancer/master/public/breast-cancer-awareness-animate.svg" />
             </Box>
           </Stack>
+        </Stack>
+
+        <Stack py={8} px={6}>
+          <CardSlider gap={32}>
+            {team.map((post, index) => (
+              <Box
+                key={index}
+                p={6}
+                mx="auto"
+                py={[6, 12]}
+                w="80%"
+                bg="white"
+                borderRadius="lg"
+                shadow="md"
+                borderWidth="1px"
+              >
+                <Stack direction="row">
+                  <Box></Box>
+                  <Box>
+                    <Heading fontSize={['xl', '3xl']} lineHeight={0}>
+                      {post.title}
+                    </Heading>
+                    <Text mt={4} fontSize={['sm', '2xl']}>
+                      teste
+                    </Text>
+                  </Box>
+                </Stack>
+              </Box>
+            ))}
+          </CardSlider>
         </Stack>
 
         <Footer />

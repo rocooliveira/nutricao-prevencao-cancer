@@ -64,8 +64,9 @@ export default function Home() {
           {/* TYPE LIST  AND FOOD*/}
           <Flex direction="column">
             <Stack bg="white" w="100%" p={6}>
-              <Image src="https://raw.githubusercontent.com/rocooliveira/nutricao-prevencao-cancer/master/public/img1.jpg" />
-
+              <Box w={['100%', '50%']} mx="auto">
+                <Image  mx="auto" src="https://raw.githubusercontent.com/rocooliveira/nutricao-prevencao-cancer/master/public/img1.jpg" />
+              </Box>
               <Stack direction="row" justifyContent="center" pb={3}>
                 <Box>
                   <CheckItem>Frutas</CheckItem>

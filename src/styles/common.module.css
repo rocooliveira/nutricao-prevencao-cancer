@@ -1,37 +1,22 @@
-@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(1, 1);
-  }
-  to {
-    -webkit-transform: scale(1.5, 1.5);
-  }
+.imgFitnessDark {
+  position: relative;
+  width: 100%;
 }
 
-/* Standard syntax */
-@keyframes zoom {
-  from {
-    transform: scale(1, 1);
-  }
-  to {
-    transform: scale(1.5, 1.5);
-  }
+.imgFitnessDark > div {
+  z-index: 10;
 }
-
-.imgZoomEffect {
-  -webkit-animation: zoom 50s; /* Chrome, Safari, Opera */
-  animation: zoom 50s;
-}
-
-.boxMainImage {
-  overflow: hidden;
-}
-
-.mainImage {
+.imgFitnessDark::before {
+  content: '';
+  border-radius: 0.8rem 0 0.8rem 0.8rem;
+  background-image: url('https://raw.githubusercontent.com/rocooliveira/nutricao-prevencao-cancer/master/public/fitness.jpg');
+  background-size: cover;
+  width: 100%;
+  height: auto;
   position: absolute;
-  opacity: 0.8;
-  object-fit: cover;
-  filter: brightness(30%);
-  /* -webkit-animation: zoom 50s; Chrome, Safari, Opera */
-  /* animation: zoom 50s; */
-  z-index: -1;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  filter: brightness(0.5);
 }

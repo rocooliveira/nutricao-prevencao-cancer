@@ -1,7 +1,6 @@
 import Head from 'next/head';
-import { Flex, Box, Stack, Image, Text } from '@chakra-ui/react';
-import { RiInkBottleFill, RiInkBottleLine } from 'react-icons/ri';
-
+import { Flex, Box, Stack, Image, Text, Icon } from '@chakra-ui/react';
+import { RiInkBottleFill, RiInkBottleLine, RiTimeLine } from 'react-icons/ri';
 import {
   GiBroccoli,
   GiStrawberry,
@@ -16,7 +15,7 @@ import { Header } from '../components/Header';
 import { CheckItem } from '../components/CheckItem';
 import { IconCard } from '../components/IconCard';
 
-// import styles from '../styles/common.module.css';
+import styles from '../styles/common.module.css';
 
 export default function Home() {
   return (
@@ -68,7 +67,7 @@ export default function Home() {
               <Flex direction="column" textAlign="center" p={5}>
                 <Text
                   fontFamily="Fira Sans"
-                  color="green.4peanut00"
+                  color="green.400"
                   fontSize="xl"
                   lineHeight="70%"
                 >
@@ -167,9 +166,106 @@ export default function Home() {
             </Stack>
           </Flex>
 
-          <Flex p={6} direction="column">
-            <Text>teste</Text>
-          </Flex>
+          {/* Dicas */}
+          <Stack pt={6} spacing={6}>
+            <Flex px={6} direction="column">
+              <Stack spacing={6}>
+                <Box textAlign="center">
+                  <Text
+                    fontFamily="Fira Sans"
+                    color="green.400"
+                    fontSize="xl"
+                    lineHeight="70%"
+                  >
+                    Dicas
+                  </Text>
+                  <Text fontSize="2xl" fontWeight="bold">
+                    Pratique exercícios
+                  </Text>
+                </Box>
+
+                <Stack
+                  direction="column"
+                  justify="space-between"
+                  minH={500}
+                  className={styles.imgFitnessDark}
+                >
+                  <Box p={4}>
+                    <Stack direction="row" align="center">
+                      <Icon as={RiTimeLine} fontSize="4xl" color="green.200" />
+                      <Text color="white" fontSize="md" fontFamily="Fira Sans">
+                        30 min/dia
+                      </Text>
+                      <Text as="small" color="white">
+                        (Recomendação OMS)
+                      </Text>
+                    </Stack>
+                  </Box>
+                  <Box textAlign="right" pr={4} pb={4}>
+                    <Text
+                      as="b"
+                      fontSize="xl"
+                      fontFamily="Fira Sans"
+                      color="white"
+                    >
+                      Para que sua vida fique ainda mais saudável, pratique
+                      atividades fisicas caso não tenha restrições médicas
+                    </Text>
+                  </Box>
+                </Stack>
+                {/* </Box> */}
+              </Stack>
+            </Flex>
+
+            <Flex px={6} direction="column">
+              <Stack spacing={6}>
+                <Box textAlign="center">
+                  <Text
+                    fontFamily="Fira Sans"
+                    color="green.400"
+                    fontSize="xl"
+                    lineHeight="70%"
+                  >
+                    Dicas
+                  </Text>
+                  <Text fontSize="2xl" fontWeight="bold">
+                    Pratique exercícios
+                  </Text>
+                </Box>
+
+                <Stack
+                  direction="column"
+                  justify="space-between"
+                  minH={500}
+                  className={styles.imgFitnessDark}
+                >
+                  <Box p={4}>
+                    <Stack direction="row" align="center">
+                      <Icon as={RiTimeLine} fontSize="4xl" color="green.200" />
+                      <Text color="white" fontSize="md" fontFamily="Fira Sans">
+                        30 min/dia
+                      </Text>
+                      <Text as="small" color="white">
+                        (Recomendação OMS)
+                      </Text>
+                    </Stack>
+                  </Box>
+                  <Box textAlign="right" pr={4} pb={4}>
+                    <Text
+                      as="b"
+                      fontSize="xl"
+                      fontFamily="Fira Sans"
+                      color="white"
+                    >
+                      Para que sua vida fique ainda mais saudável, pratique
+                      atividades fisicas caso não tenha restrições médicas
+                    </Text>
+                  </Box>
+                </Stack>
+                {/* </Box> */}
+              </Stack>
+            </Flex>
+          </Stack>
         </Stack>
       </main>
     </div>

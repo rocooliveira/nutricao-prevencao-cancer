@@ -11,7 +11,7 @@ export function Footer() {
         </Stack>
         <Stack bg="gray.800" position="relative" w="100%" top={10}>
           <Box p={6} mt={12}>
-            <Text as="b" color="white">
+            <Text as="b" fontSize={['md', '2xl']}>
               SEMINARIO MULTIDISCIPLINAR
             </Text>
             <Text>fsfs</Text>

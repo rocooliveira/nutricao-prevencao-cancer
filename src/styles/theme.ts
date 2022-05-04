@@ -7,6 +7,10 @@ export const theme = extendTheme({
         bg: 'gray.50',
         color: 'gray.800',
       },
+      footer: {
+        color: 'white',
+        fontFamily: 'Fira Sans',
+      },
     },
   },
   fonts: {

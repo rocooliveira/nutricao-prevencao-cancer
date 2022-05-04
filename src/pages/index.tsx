@@ -32,14 +32,22 @@ export default function Home() {
           {/* HERO */}
           <Flex p={6} direction="column">
             <Stack spacing={3}>
-              <Text fontSize="xl" fontFamily="Fira Sans" color="green.300">
+              <Text
+                fontSize={['xl', '3xl']}
+                fontFamily="Fira Sans"
+                color="green.300"
+              >
                 SEMINARIO MULTIDISCIPLINAR
               </Text>
-              <Text fontSize="3xl" fontFamily="Fira Sans" fontWeight={600}>
+              <Text
+                fontSize={['3xl', '5xl']}
+                fontFamily="Fira Sans"
+                fontWeight={600}
+              >
                 Alimentos que ajudam a previnir o surgimento do câncer
               </Text>
 
-              <Text color="gray.500">
+              <Text color="gray.500" fontSize={['md', '2xl']}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eius mod tempor incididunt ut labore et dolore magna aliqua.
                 Utenim adminim veniam, quis nostrud exercitation ullam. Fusce
@@ -67,14 +75,14 @@ export default function Home() {
             <Stack bg="white" py={6}>
               <Flex direction="column" textAlign="center" p={5}>
                 <Text
+                  fontSize={['xl', '3xl']}
                   fontFamily="Fira Sans"
                   color="green.400"
-                  fontSize="xl"
                   lineHeight="70%"
                 >
                   Benefícios
                 </Text>
-                <Text fontSize="2xl" fontWeight="bold">
+                <Text fontSize={['2xl', '5xl']} fontWeight="bold">
                   Conheça os campeões
                 </Text>
               </Flex>

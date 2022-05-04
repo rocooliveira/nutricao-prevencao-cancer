@@ -13,6 +13,7 @@ export function IconCard({ title, desc, icon, ...rest }: CardProps) {
   return (
     <Box
       p={6}
+      py={[6, 12]}
       w="100%"
       bg="white"
       borderRadius="lg"

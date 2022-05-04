@@ -233,7 +233,7 @@ export default function Home() {
               </Stack>
             </Flex>
 
-            <Flex px={6} direction="column">
+            <Flex px={6} pb={6} direction="column">
               <Stack spacing={6}>
                 <Box textAlign="center">
                   <Text

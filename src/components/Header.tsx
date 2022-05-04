@@ -20,9 +20,9 @@ export function Header() {
             />
           </Box>
           <Stack direction="column" pt={3}>
-            <Text fontSize="xl">Nutrição</Text>
+            <Text fontSize={['xl', '3xl']}>Nutrição</Text>
 
-            <Text fontSize="sm" fontWeight={300} pb={4}>
+            <Text fontSize={['sm', 'lg']} fontWeight={300} pb={4}>
               Lorem ipsum dolor sit amet
             </Text>
           </Stack>

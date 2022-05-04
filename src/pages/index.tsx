@@ -69,7 +69,12 @@ export default function Home() {
                 </Text>
               </Flex>
 
-              <Stack bg="orange.50" direction="column" spacing={8} p={6}>
+              <Stack
+                bg="orange.50"
+                direction="column"
+                spacing={8}
+                p={6}
+              >
                 <IconCard
                   position="relative"
                   left="0.8rem"

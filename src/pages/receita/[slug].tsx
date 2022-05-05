@@ -1,10 +1,14 @@
 import { useRouter } from 'next/router'
 import Error from 'next/error';
 
-import { Box, Flex, Image, VStack, Text, Icon, SimpleGrid } from "@chakra-ui/react";
-import { Header } from "../../components/Header";
+import { Box, Flex, Image, VStack, Text, Icon, SimpleGrid, UnorderedList, ListItem, OrderedList } from "@chakra-ui/react";
 
 import {BiDish, BiTime, BiGroup, BiBarChartAlt} from 'react-icons/bi'
+
+import { Header } from "../../components/Header";
+
+import styles from '../../styles/common.module.css';
+
 import recipes from "../../utils/recipes";
 
 type recipeInfoProps = {
@@ -18,6 +22,8 @@ type recipeProps = {
   title: string;
   desc?: string;
   info: recipeInfoProps;
+  ingredients: [];
+  directions: [];
 }
 
 export default function Recipes({params}){
@@ -41,20 +47,21 @@ export default function Recipes({params}){
             </Box>
           </Flex>
           <Flex>
-            <VStack align="flex-start" p={6}>
+            <VStack align="flex-start" p={6} spacing={6}>
+
               <Box>
                 <Text fontSize={['2xl', '5xl']} fontWeight="bold" fontFamily="Fira Sans">
                   {recipe.title}
                 </Text>
               </Box>
+
               <Box>
-                <Text fontSize={['md', '2xl']}>
+                <Text fontSize={['md', '3xl']}>
                   {recipe.desc}
                 </Text>
               </Box>
 
-
-              <SimpleGrid columns={[2, null, null, 4]} spacing={6} pt={6}>
+              <SimpleGrid columns={[2, null, null, 4]} spacing={6} py={4}>
                 <Box display="flex" flexDirection="row" alignItems="center">
                   <Icon as={BiDish} color="green.400" boxSize={[7, 14]} mr={3}/>
                   <Text fontSize={['sm', '3xl']}  >{recipe.info.ingredientAmount} ingredientes</Text>
@@ -75,6 +82,44 @@ export default function Recipes({params}){
                   <Text fontSize={['sm', '3xl']} >Dificuldade {recipe.info.level}</Text>
                 </Box>
               </SimpleGrid>
+
+              <Box>
+                <Text fontSize={['2xl', '5xl']} fontWeight="bold" fontFamily="Fira Sans">
+                  Ingredientes
+                </Text>
+              </Box>
+
+              <Box>
+                <UnorderedList spacing={2} pl={2}>
+                  {recipe.ingredients.map( (item, index) => (
+                    <ListItem 
+                      key={index} 
+                      fontSize={['md', '3xl']}
+                    >
+                      {item}
+                    </ListItem>
+                  ))}
+                </UnorderedList>
+              </Box>
+              <Box>
+
+                <Text fontSize={['2xl', '5xl']} fontWeight="bold" fontFamily="Fira Sans">
+                  Modo de Preparo
+                </Text>
+              </Box>
+
+              <Box>
+                <OrderedList className={styles.numberListG} spacing={2} pl={2}  >
+                    {recipe.directions.map( (item, index) => (
+                      <ListItem 
+                        key={index} 
+                        fontSize={['md', '3xl']}
+                        dangerouslySetInnerHTML={{__html: item}}
+                      />
+                    ))}
+                  </OrderedList>
+              </Box>
+
             </VStack>
           </Flex>
         </div>

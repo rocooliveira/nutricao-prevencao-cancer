@@ -77,3 +77,30 @@
 
 }
 
+.numberListG {
+  
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+.numberListG li {
+  margin-left: 2rem;
+  counter-increment: my-awesome-counter;
+}
+.numberListG li::marker {
+  content: counter(my-awesome-counter) ".  ";
+  color: #2D3748;
+  font-weight: bold;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+@media (max-width: 991px) {
+  .numberListG li {
+    margin-left: 1.1rem;
+    counter-increment: my-awesome-counter;
+  }
+  .numberListG li::marker {
+    font-size: 2rem;
+  }
+
+}

@@ -69,3 +69,11 @@
     left: -200px !important;
   }
 }
+
+@media (min-width: 992px) {
+  .footerOverlayBlackWaves {
+    left: -560px;
+  }
+
+}
+

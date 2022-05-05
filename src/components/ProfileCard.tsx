@@ -1,11 +1,11 @@
-import { Stack, Box, Heading, Text, Avatar, BoxProps } from '@chakra-ui/react';
+import { Stack, Box, Heading, Avatar, BoxProps } from '@chakra-ui/react';
 
 interface ProfileCardProps extends BoxProps {
   name: string;
   pictureUrl: string;
 }
 export function ProfileCard({ name, pictureUrl, ...rest }: ProfileCardProps) {
-  console.log(pictureUrl);
+  
   return (
     <Box
       {...rest}
@@ -19,11 +19,11 @@ export function ProfileCard({ name, pictureUrl, ...rest }: ProfileCardProps) {
       borderWidth="1px"
     >
       <Stack direction="column" align="center" spacing={10}>
-        <Box px={5}>
-          <Avatar {...name} size="3xl" src={pictureUrl} />
+        <Box px={5} >
+          <Avatar name={name} size="4xl" w={32} h={32} src={pictureUrl} fontSize="4xl"   />
         </Box>
         <Box>
-          <Heading fontSize={['xl', '3xl']} pb={4}>
+          <Heading fontSize={['xl', '3xl']} pb={4} textAlign="center">
             {name}
           </Heading>
         </Box>
@@ -31,3 +31,5 @@ export function ProfileCard({ name, pictureUrl, ...rest }: ProfileCardProps) {
     </Box>
   );
 }
+
+

@@ -32,25 +32,26 @@ export default function useBoundingRect(limit) {
     setNode(node);
   }, []);
 
-  useLayoutEffect(() => {
-    if ("undefined" !== typeof window && node) {
-      const measure = () =>
-        window.requestAnimationFrame(() =>
-          setDimensions(getDimensionObject(node))
-        );
+  if (typeof window !== "undefined") {
+    useLayoutEffect(() => {
+      if ("undefined" !== typeof window && node) {
+        const measure = () =>
+          window.requestAnimationFrame(() =>
+            setDimensions(getDimensionObject(node))
+          );
 
-      measure();
+        measure();
 
-      const listener = debounce(limit ? limit : 100, measure);
+        const listener = debounce(limit ? limit : 100, measure);
 
-      window.addEventListener("resize", listener);
-      window.addEventListener("scroll", listener);
-      return () => {
-        window.removeEventListener("resize", listener);
-        window.removeEventListener("scroll", listener);
-      };
-    }
-  }, [node, limit]);
-
+        window.addEventListener("resize", listener);
+        window.addEventListener("scroll", listener);
+        return () => {
+          window.removeEventListener("resize", listener);
+          window.removeEventListener("scroll", listener);
+        };
+      }
+    }, [node, limit]);
+  }
   return [ref, dimensions, node];
 }

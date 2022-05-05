@@ -140,11 +140,12 @@ const Slider = ({
 }) => {
   const [ref, { width }] = useBoundingRect(100);
 
-  useLayoutEffect(
-    () => initSliderWidth(Math.round(width)),
-    [width, initSliderWidth]
-  );
-
+  if (typeof window !== "undefined") {  
+    useLayoutEffect(
+      () => initSliderWidth(Math.round(width)),
+      [width, initSliderWidth]
+    );
+  }
   const handleFocus = () => setTrackIsActive(true);
 
   const handleDecrementClick = () => {

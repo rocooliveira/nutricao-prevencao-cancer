@@ -5,11 +5,11 @@ const team = [
   },
   {
     name: 'Dhara Hentzy',
-    pictureUrl: 'https://i.imgur.com/yqYyX6a.jpeg',
+    pictureUrl: './img/team/dhara.jpg',
   },
   {
     name: 'Evellyn Pereira',
-    pictureUrl: '',
+    pictureUrl: './img/team/evellyn-pereira.jpg',
   },
   {
     name: 'Giselle Breves',

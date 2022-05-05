@@ -21,12 +21,13 @@ import { Footer } from '../components/Footer';
 import team from '../utils/team';
 
 import styles from '../styles/common.module.css';
+import { RecipesCard } from '../components/RecipesCard';
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>Alimentos que ajudam a previnir o surgimento do câncer</title>
+        <title>Alimentos que ajudam a prevenir o surgimento do câncer</title>
       </Head>
 
       <main>
@@ -48,7 +49,7 @@ export default function Home() {
                 fontFamily="Fira Sans"
                 fontWeight={600}
               >
-                Alimentos que ajudam a previnir o surgimento do câncer
+                Alimentos que ajudam a prevenir o surgimento do câncer
               </Text>
 
               <Text color="gray.500" fontSize={['md', '2xl']}>
@@ -105,7 +106,7 @@ export default function Home() {
                   position="relative"
                   right="0.6rem"
                   title="Frutas Vermelhas"
-                  desc="Corante natural antocianina, potente antiocidante que ajuda na prevenção do câncer. (morango, amora, cereja...)"
+                  desc="Corante natural antocianina, potente antioxidante que ajuda na prevenção do câncer. (morango, amora, cereja...)"
                   icon={GiStrawberry}
                 />
 
@@ -113,7 +114,7 @@ export default function Home() {
                   position="relative"
                   left="0.6rem"
                   title="Canela"
-                  desc="A canela em pau ou em pó consegue induzir  a morte programada das células canceriginas (mutações)."
+                  desc="Extrato da canela consegue induzir a morte programada das celulas cancerigenas (multações)."
                   icon={RiInkBottleFill}
                 />
 
@@ -129,7 +130,7 @@ export default function Home() {
                   position="relative"
                   left="0.6rem"
                   title="Alho"
-                  desc="O seu composto chamado alicina, ajuda na eliminação de toxinas e bacterias. Fortificando assim a imunidade."
+                  desc="O seu composto chamado alicina, ajuda na eliminação de toxinas e bactérias. Fortificando assim a imunidade."
                   icon={GiGarlic}
                 />
               </Stack>
@@ -143,7 +144,7 @@ export default function Home() {
                   position="relative"
                   left="0.6rem"
                   title="Azeite Extra Virgem"
-                  desc="Ajudam na diminuição do surgimento  de câncer (mecanismo desconhecido)."
+                  desc="Por sua ação antioxidante ajuda na diminuição do surgimento  de câncer."
                   icon={GiOlive}
                 />
 
@@ -173,7 +174,7 @@ export default function Home() {
                   position="relative"
                   right="0.6rem"
                   title="Peixes"
-                  desc="Peixes como sardinha, cavala, atum são ricos em ômega 3 e vitamida D. Fortalecendo o organismo e previnido o câncer, por ação anti-inflamatória."
+                  desc="Peixes como sardinha, cavala, atum são ricos em ômega 3 e vitamina D. Fortalecendo o organismo e prevenindo o câncer, por ação anti-inflamatória."
                   icon={GiFlatfish}
                 />
               </Stack>
@@ -213,12 +214,12 @@ export default function Home() {
                       />
                       <Text
                         color="white"
-                        fontSize={['md', '4xl']}
+                        fontSize={['sm', '4xl']}
                         fontFamily="Fira Sans"
                       >
-                        30 min/dia
+                        30 à 60 min/dia
                       </Text>
-                      <Text fontSize={['sm', '2xl']} color="white">
+                      <Text fontSize={['xs', '2xl']} color="white">
                         (Recomendação OMS)
                       </Text>
                     </Stack>
@@ -299,6 +300,48 @@ export default function Home() {
           </Stack>
         </Stack>
 
+
+        <Stack bg="green.300">
+          <Box textAlign="center" bg="white" p={6} pb={0} borderBottom={1} borderStyle="solid" borderColor="green.200">
+            <Text
+              fontFamily="Fira Sans"
+              color="green.400"
+              fontSize={['2xl', '4xl']}
+              lineHeight="70%"
+            >
+              Refeições
+            </Text>
+            <Text fontSize={['2xl', '5xl']} fontWeight="bold">
+              Sugestão de cardápio
+            </Text>
+            <Text fontSize={['sm', 'xl']} fontWeight="bold" color="gray.500" mt={3} mb={4}>
+              Lorem ipsum in sint magna occaecat mollit ut pariatur aliqua eiusmod.
+            </Text>
+
+            <Box h={['5rem', '12rem']} overflow="hidden">
+              <Image src="./img/plate_rounded-1024x1024.jpg" mx="auto" />
+            </Box>
+          </Box>
+          <Flex p={6} backgroundImage="url(./img/veg_pattern01.png)">
+            <Stack direction="column" mx="auto" w="100%" pt={6} spacing={6}>
+
+              <RecipesCard 
+                title='Geleia de Frutas Vermelhas' 
+                subTitle='Naturalmente doce e dispensa adição de açucar.' 
+                picture='./img/geleia-frutas-vermelhas.png'
+              />
+
+              <RecipesCard 
+                title='Suflê de Brócolis' 
+                subTitle=' Simples, rápido e delicioso!' 
+                picture='./img/sufle-de-brocolis.png'
+              />
+
+            </Stack>
+          </Flex>
+        </Stack>
+
+
         <Stack py={8} px={6}>
           <Box textAlign="center" pb={4}>
             <Text
@@ -310,7 +353,7 @@ export default function Home() {
               Alunos
             </Text>
             <Text fontSize={['2xl', '5xl']} fontWeight="bold">
-              Integrandes desta equipe
+              Integrantes desta equipe
             </Text>
           </Box>
           <CardSlider gap={32}>

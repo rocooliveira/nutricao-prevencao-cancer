@@ -53,11 +53,15 @@ export default function Home() {
               </Text>
 
               <Text color="gray.500" fontSize={['md', '2xl']}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eius mod tempor incididunt ut labore et dolore magna aliqua.
-                Utenim adminim veniam, quis nostrud exercitation ullam. Fusce
-                sodales consequat velit eget dictum. Integer ornare magna vitae
-                eleifend congue.
+                O que você come pode afetar drasticamente muitos aspectos da sua saúde, incluindo o risco de desenvolver doenças crônicas como doenças cardíacas, diabetes e câncer.
+              </Text>
+
+              <Text color="gray.500" fontSize={['md', '2xl']}>
+                O desenvolvimento do câncer, em particular, mostrou ser fortemente influenciado pela sua dieta.
+              </Text>
+             
+              <Text color="gray.500" fontSize={['md', '2xl']}>
+                Muitos alimentos contêm compostos benéficos que podem ajudar a diminuir o desenvolvimento do câncer.
               </Text>
             </Stack>
           </Flex>
@@ -301,8 +305,17 @@ export default function Home() {
         </Stack>
 
 
-        <Stack bg="green.300">
-          <Box textAlign="center" bg="white" p={6} pb={0} borderBottom={1} borderStyle="solid" borderColor="green.200">
+        <Stack bg="green.300" pt={1}>
+          <Box 
+            textAlign="center"
+            bg="white"
+            p={6}
+            pt={9}
+            pb={0}
+            borderBottom={1}
+            borderStyle="solid"
+            borderColor="green.200"
+          >
             <Text
               fontFamily="Fira Sans"
               color="green.400"
@@ -315,7 +328,7 @@ export default function Home() {
               Sugestão de cardápio
             </Text>
             <Text fontSize={['sm', 'xl']} fontWeight="bold" color="gray.500" mt={3} mb={4}>
-              Lorem ipsum in sint magna occaecat mollit ut pariatur aliqua eiusmod.
+              Aproveite nossas dicas e prepare uma refeição saudável e apetitosa.
             </Text>
 
             <Box h={['5rem', '12rem']} overflow="hidden">

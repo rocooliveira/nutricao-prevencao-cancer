@@ -1,11 +1,13 @@
 import { Box, Image, Stack, Text } from "@chakra-ui/react";
+import Link from "next/link";
 
 interface RecipesCardProps{
   title:    string;
   subTitle: string;
   picture:  string;
+  url:  string;
 }
-export function RecipesCard({title, subTitle, picture}: RecipesCardProps){
+export function RecipesCard({title, subTitle, picture, url}: RecipesCardProps){
     return(
         <Box
         p={6}
@@ -17,18 +19,22 @@ export function RecipesCard({title, subTitle, picture}: RecipesCardProps){
         shadow="md"
         borderWidth="1px"
         >
-          <Stack>
-              <Box mt={['-6rem', '-14rem']}>
-                  <Image src={picture} w={['70%', '60%']} mx="auto"/>
-              </Box>
-              <Box>
-                <Text fontSize={['xl', '2xl']} fontWeight="bold">{title}</Text>
-                <Text mt={4} fontSize={['md', '2xl']}>{subTitle}</Text>
-              </Box>
-              <Box>
-                <Text as="u" fontSize="xs" color="green.400" fontWeight="bold">Ver receita</Text>
-              </Box>
-          </Stack>
+          <Link href={url}>
+            <a>
+              <Stack>
+                  <Box mt={['-6rem', '-14rem']}>
+                      <Image src={picture} w={['70%', '60%']} mx="auto"/>
+                  </Box>
+                  <Box>
+                    <Text fontSize={['xl', '2xl']} fontWeight="bold">{title}</Text>
+                    <Text mt={4} fontSize={['md', '2xl']}>{subTitle}</Text>
+                  </Box>
+                  <Box textAlign="right">
+                    <Text as="u" fontSize="xs" color="green.400" fontWeight="bold">Ver receita</Text>
+                  </Box>
+              </Stack>
+              </a>
+          </Link>
         </Box>
     );
 }

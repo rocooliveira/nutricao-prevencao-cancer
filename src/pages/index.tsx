@@ -329,12 +329,14 @@ export default function Home() {
                 title='Geleia de Frutas Vermelhas' 
                 subTitle='Naturalmente doce e dispensa adição de açucar.' 
                 picture='./img/geleia-frutas-vermelhas.png'
+                url='/receita/geleia-frutas-vermelhas'
               />
 
               <RecipesCard 
                 title='Suflê de Brócolis' 
                 subTitle=' Simples, rápido e delicioso!' 
                 picture='./img/sufle-de-brocolis.png'
+                url='/receita/teste'
               />
 
             </Stack>

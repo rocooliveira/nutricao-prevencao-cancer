@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router'
 import Error from 'next/error';
 
-import { Box, Flex, Image, VStack, Text, Icon, SimpleGrid, UnorderedList, ListItem, OrderedList } from "@chakra-ui/react";
+import { Box, Flex, Image, VStack, HStack, Text, Icon, SimpleGrid, UnorderedList, ListItem, OrderedList } from "@chakra-ui/react";
 
-import {BiDish, BiTime, BiGroup, BiBarChartAlt} from 'react-icons/bi'
+import {BiDish, BiTime, BiGroup, BiBarChartAlt, BiLinkExternal} from 'react-icons/bi'
 
 import { Header } from "../../components/Header";
 
@@ -14,16 +14,19 @@ import recipes from "../../utils/recipes";
 type recipeInfoProps = {
   ingredientAmount: number;
   serves?: number;
-  time: number;
+  time?: number;
   level: string;
 
 }
 type recipeProps = {
   title: string;
   desc?: string;
+  image?: string;
   info: recipeInfoProps;
   ingredients: [];
   directions: [];
+  creditsTitle?: string;
+  creditsUrl?: string;
 }
 
 export default function Recipes({params}){
@@ -43,7 +46,7 @@ export default function Recipes({params}){
           <Header/>
           <Flex>
             <Box w="full">
-              <Image src="https://i.pinimg.com/564x/b4/32/24/b43224123a290b8cea009304af2bb612.jpg" w="full"/>
+              <Image src={recipe.image} w="full"/>
             </Box>
           </Flex>
           <Flex>
@@ -62,21 +65,26 @@ export default function Recipes({params}){
               </Box>
 
               <SimpleGrid columns={[2, null, null, 4]} spacing={6} py={4}>
+
                 <Box display="flex" flexDirection="row" alignItems="center">
                   <Icon as={BiDish} color="green.400" boxSize={[7, 14]} mr={3}/>
                   <Text fontSize={['sm', '3xl']}  >{recipe.info.ingredientAmount} ingredientes</Text>
                 </Box>
-                <Box display="flex" flexDirection="row" alignItems="center">
-                  <Icon as={BiTime} color="green.400" boxSize={[7, 14]} mr={3}/>
-                  <Text fontSize={['sm', '3xl']}>{recipe.info.time} minutos</Text>
-                </Box>
+
+                { recipe.info.time && (
+                  <Box display="flex" flexDirection="row" alignItems="center">
+                    <Icon as={BiTime} color="green.400" boxSize={[7, 14]} mr={3}/>
+                    <Text fontSize={['sm', '3xl']}>{recipe.info.time} minutos</Text>
+                  </Box>
+                )}
+
                 { recipe.info.serves && (
-                    <Box display="flex" flexDirection="row" alignItems="center">
-                      <Icon as={BiGroup} color="green.400" boxSize={[7, 14]} mr={3}/>
-                      <Text fontSize={['sm', '3xl']}>{recipe.info.serves} pessoas</Text>
-                    </Box>
-                  )
-                }
+                  <Box display="flex" flexDirection="row" alignItems="center">
+                    <Icon as={BiGroup} color="green.400" boxSize={[7, 14]} mr={3}/>
+                    <Text fontSize={['sm', '3xl']}>{recipe.info.serves} pessoas</Text>
+                  </Box>
+                )}
+
                 <Box display="flex" flexDirection="row" alignItems="center">
                   <Icon as={BiBarChartAlt} color="green.400" boxSize={[7, 14]} mr={3}/>
                   <Text fontSize={['sm', '3xl']} >Dificuldade {recipe.info.level}</Text>
@@ -120,6 +128,23 @@ export default function Recipes({params}){
                   </OrderedList>
               </Box>
 
+              { recipe.creditsTitle && (
+                <Box pt={7}  w="full">
+                  <a 
+                    target="_blank" 
+                    href={recipe.creditsUrl}
+                    >
+                      <HStack justify="flex-end">
+                        <Box>
+                          <Text>
+                            Créditos: <Text as="span" fontWeight="bold">Tudo receitas</Text>
+                          </Text>
+                        </Box>
+                        <Box pt={1}><Icon as={BiLinkExternal}/></Box>
+                      </HStack>
+                    </a>
+                </Box>
+              )}
             </VStack>
           </Flex>
         </div>

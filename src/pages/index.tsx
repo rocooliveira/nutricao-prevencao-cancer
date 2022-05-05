@@ -336,7 +336,7 @@ export default function Home() {
                 title='Suflê de Brócolis' 
                 subTitle=' Simples, rápido e delicioso!' 
                 picture='./img/sufle-de-brocolis.png'
-                url='/receita/teste'
+                url='/receita/sufle-brocolis'
               />
 
             </Stack>

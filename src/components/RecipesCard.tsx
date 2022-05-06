@@ -12,7 +12,7 @@ export function RecipesCard({title, subTitle, picture, url}: RecipesCardProps){
         <Box
         p={6}
         py={[6, 12]}
-        my={[20, 52]}
+        mt={[20, 52]}
         w="100%"
         bg="white"
         borderRadius="xl"
@@ -22,7 +22,9 @@ export function RecipesCard({title, subTitle, picture, url}: RecipesCardProps){
           <Link href={url}>
             <a>
               <Stack>
-                  <Box mt={['-6rem', '-14rem']}>
+                  <Box 
+                    mt={['-6rem', '-14rem']}
+                  >
                       <Image src={picture} w={['70%', '60%']} mx="auto"/>
                   </Box>
                   <Box>

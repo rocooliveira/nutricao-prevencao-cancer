@@ -65,7 +65,39 @@ const recipes = {
         ],
         creditsTitle: 'gshow',
         creditsUrl: 'https://gshow.globo.com/RPC/Estudio-C/cozinha-paranaense/receitas/sufle-de-brocolis-rapido-e-delicioso-para-quando-a-fome-bater.ghtml'
-    }
+    },
+    'tilapia-grelhada-espinafre-salteado': {
+        title: 'Tilápia de frigideira com espinafre salteado',
+        desc: 'A tilápia grelhada com espinafre salteado está repleta de sabor e beneficíos para saúde, incluindo ácidos graxos ômega-3, ferro, cálcio, ácido fólico e outras vitaminas e minerais saudáveis. Sirva com arroz integral para uma refeição completa.',
+        image: 'https://www.cancer.org/content/dam/cancer-org/images/publications/interior/skillet-tilapia-with-sauteed-spinach.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg',
+        info:{
+            ingredientAmount: 9,
+            serves: 2,
+            time: 10,
+            level: 'Baixa',
+        },
+        ingredients:[
+            '1 colher de sopa de molho de molho shoyo baixo teor de sódio',
+            '2 colheres de chá de gengibre fresco, finamente picado',
+            '2 colheres de chá de vinagre de arroz',
+            '1 dente de alho, picado',
+            '1 colher de chá de curcuma ',
+            '500g tilápia (ou outros filés finos de peixe branco)',
+            '3 colheres de chá de azeite extra virgem',
+            '- Espinafre a gosto',
+            '1 colher de sopa de água',
+        ],
+        directions:[
+            'Em uma tigela, misture shoyo, gengibre, vinagre de arroz e a curcuma. Pincele levemente o peixe com um pouco da mistura.',
+            'Em uma frigideira grande, de preferência antiaderente, em fogo médio-alto, adicione o azeite extra virgem. Adicione o peixe e cozinhe por 2 a 4 minutos de cada lado, ou até ficar cozido. Retire o peixe e mantenha aquecido.',
+            'Adicione o espinafre, a mistura do shoyo restante e a água na frigideira e refogue até que o espinafre fique verde brilhante e murcho. Separe o espinafre e retorne o peixe à frigideira. Cubra e cozinhe por 30 segundos a 1 minuto.',
+            'Sirva o peixe coberto com espinafre.'
+        ],
+        creditsTitle: null,
+        creditsUrl: null
+    },
 };
 
 export default recipes; 
+
+

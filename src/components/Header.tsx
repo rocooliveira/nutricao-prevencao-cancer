@@ -18,7 +18,7 @@ export function Header() {
             <Link href="/">
               <a>
                 <Image
-                  src="./img/logo-green.jpg"
+                  src="/img/logo-green.jpg"
                   w={78}
                 />
               </a>

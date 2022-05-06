@@ -25,10 +25,10 @@ const team = [
   },
   {
     name: 'Vanessa Queiruja',
-    pictureUrl: '',
+    pictureUrl: './img/team/vanessa-queiruja.jpg',
   },
   {
-    name: 'Rafael',
+    name: 'Rafael Marques',
     pictureUrl: '',
   },
   {

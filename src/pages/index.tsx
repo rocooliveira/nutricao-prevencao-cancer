@@ -344,7 +344,7 @@ export default function Home() {
             </Box>
           </Box>
           <Flex p={6} backgroundImage="url(./img/veg_pattern01.png)">
-            <Stack direction="column" mx="auto" w="100%" pt={6} spacing={6}>
+            <Stack direction="column" mx="auto" w="100%" pt={6} spacing={28}>
 
               <RecipesCard 
                 title='Geleia de Frutas Vermelhas' 
@@ -355,9 +355,16 @@ export default function Home() {
 
               <RecipesCard 
                 title='Suflê de Brócolis' 
-                subTitle=' Simples, rápido e delicioso!' 
+                subTitle='Simples, rápido e delicioso!' 
                 picture='./img/sufle-de-brocolis.png'
                 url='/receita/sufle-brocolis'
+              />
+
+              <RecipesCard 
+                title='Tilápia grelhada com espinafre salteado' 
+                subTitle='Leve, repleto de sabor e saudável' 
+                picture='./img/tilapia-espinafre.png'
+                url='/receita/tilapia-grelhada-espinafre-salteado'
               />
 
             </Stack>

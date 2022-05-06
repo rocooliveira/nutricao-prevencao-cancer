@@ -12,7 +12,7 @@
 .imgGoodEatingDark::before {
   content: '';
   border-radius: 0.8rem 0 0.8rem 0.8rem;
-  background-image: url('https://raw.githubusercontent.com/rocooliveira/nutricao-prevencao-cancer/master/public/fitness.jpg');
+  background-image: url('/img/fitness.jpg');
   background-size: cover;
   width: 100%;
   height: auto;
@@ -25,7 +25,7 @@
 }
 
 .imgGoodEatingDark::before {
-  background-image: url('https://raw.githubusercontent.com/rocooliveira/nutricao-prevencao-cancer/master/public/good-eating-habits.jpg');
+  background-image: url('/img/good-eating-habits.jpg');
 }
 
 .footerOverlayMainWaves {
@@ -53,8 +53,8 @@
   pointer-events: none;
   overflow: hidden;
   margin-top: 0px;
-  mask-image: url('https://raw.githubusercontent.com/rocooliveira/nutricao-prevencao-cancer/master/public/wave.svg');
-  -webkit-mask-image: url('https://raw.githubusercontent.com/rocooliveira/nutricao-prevencao-cancer/master/public/wave.svg');
+  mask-image: url('/img/wave.svg');
+  -webkit-mask-image: url('/img/wave.svg');
   mask-size: 1940px;
   -webkit-mask-size: 1940px;
   position: absolute;

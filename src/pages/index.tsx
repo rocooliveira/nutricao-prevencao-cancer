@@ -53,7 +53,8 @@ export default function Home() {
               </Text>
 
               <Text color="gray.500" fontSize={['md', '2xl']}>
-                O que você come pode afetar drasticamente muitos aspectos da sua saúde, incluindo o risco de desenvolver doenças crônicas como doenças cardíacas, diabetes e câncer.
+                O que você come pode afetar drasticamente muitos aspectos da sua saúde, incluindo o risco de 
+                desenvolver doenças crônicas como doenças cardíacas, diabetes e câncer.
               </Text>
 
               <Text color="gray.500" fontSize={['md', '2xl']}>
@@ -70,7 +71,10 @@ export default function Home() {
           <Flex direction="column">
             <Stack bg="white" w="100%" p={6}>
               <Box w={['100%', '50%']} mx="auto">
-                <Image  mx="auto" src="https://raw.githubusercontent.com/rocooliveira/nutricao-prevencao-cancer/master/public/img1.jpg" />
+                <Image 
+                  mx="auto" 
+                  src="./img/img1.jpg"
+                />
               </Box>
               <Stack direction="row" justifyContent="center" pb={3}>
                 <Box>
@@ -102,7 +106,8 @@ export default function Home() {
                   position="relative"
                   left="0.8rem"
                   title="Brócolis"
-                  desc="Um alimento rico em sulforafano, um nutriente que diminui a agressividade e o crescimento do câncer."
+                  desc="Um alimento rico em sulforafano, um nutriente que diminui a agressividade e o crescimento do 
+                  câncer."
                   icon={GiBroccoli}
                 />
 
@@ -110,7 +115,8 @@ export default function Home() {
                   position="relative"
                   right="0.6rem"
                   title="Frutas Vermelhas"
-                  desc="Corante natural antocianina, potente antioxidante que ajuda na prevenção do câncer. (morango, amora, cereja...)"
+                  desc="Corante natural antocianina, potente antioxidante que ajuda na prevenção do câncer. (morango, 
+                    amora, cereja...)"
                   icon={GiStrawberry}
                 />
 
@@ -126,7 +132,8 @@ export default function Home() {
                   position="relative"
                   right="0.6rem"
                   title="Oleaginosas"
-                  desc="Contem em sua composição o selênio, um potente antioxidante. Auxiliando na redução de biomarcadores relacionados a inflamação."
+                  desc="Contem em sua composição o selênio, um potente antioxidante. Auxiliando na redução de 
+                  biomarcadores relacionados a inflamação."
                   icon={GiPeanut}
                 />
 
@@ -134,14 +141,15 @@ export default function Home() {
                   position="relative"
                   left="0.6rem"
                   title="Alho"
-                  desc="O seu composto chamado alicina, ajuda na eliminação de toxinas e bactérias. Fortificando assim a imunidade."
+                  desc="O seu composto chamado alicina, ajuda na eliminação de toxinas e bactérias. Fortificando assim 
+                  a imunidade."
                   icon={GiGarlic}
                 />
               </Stack>
 
               <Stack bg="white" direction="column" spacing={8} px={6} py={3}>
                 <Box position="relative" mt="-3.5rem" mb="-2.5rem">
-                  <Image src="https://raw.githubusercontent.com/rocooliveira/nutricao-prevencao-cancer/master/public/eating-healthy-food.svg" />
+                  <Image src="./img/eating-healthy-food.svg" />
                 </Box>
 
                 <IconCard
@@ -299,7 +307,7 @@ export default function Home() {
             </Box>
 
             <Box>
-              <Image src="https://raw.githubusercontent.com/rocooliveira/nutricao-prevencao-cancer/master/public/breast-cancer-awareness-animate.svg" />
+              <Image src="./img/breast-cancer-awareness-animate.svg" />
             </Box>
           </Stack>
         </Stack>

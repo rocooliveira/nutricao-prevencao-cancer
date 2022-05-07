@@ -1,7 +1,7 @@
 const team = [
   {
     name: 'Bruna Natielli',
-    pictureUrl: '',
+    pictureUrl: './img/team/bruna-natielli.jpg',
   },
   {
     name: 'Dhara Hentzy',
@@ -13,15 +13,15 @@ const team = [
   },
   {
     name: 'Giselle Breves',
-    pictureUrl: '',
+    pictureUrl: './img/team/giselle-breves.jpg',
   },
   {
-    name: 'Marcelly de Almeida',
-    pictureUrl: '',
+    name: 'Marcelly Morete',
+    pictureUrl: './img/team/marcelly-morete.jpg',
   },
   {
     name: 'Rodrigo Lima',
-    pictureUrl: '',
+    pictureUrl: './img/team/rodrigo-lima.jpg',
   },
   {
     name: 'Vanessa Queiruja',
@@ -33,7 +33,7 @@ const team = [
   },
   {
     name: 'Juliana Kelly',
-    pictureUrl: '',
+    pictureUrl: './img/team/juliana-kelly.jpg',
   },
 ];
 

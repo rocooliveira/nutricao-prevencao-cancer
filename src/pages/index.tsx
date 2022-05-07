@@ -30,7 +30,7 @@ export default function Home() {
         <title>Alimentos que ajudam a prevenir o surgimento do câncer</title>
       </Head>
 
-      <main>
+      <main className={styles.customContainer}>
         <Header />
 
         <Stack>
@@ -124,7 +124,7 @@ export default function Home() {
                   position="relative"
                   left="0.6rem"
                   title="Canela"
-                  desc="Extrato da canela consegue induzir a morte programada das celulas cancerigenas (multações)."
+                  desc="Extrato da canela consegue induzir a morte programada das células cancerígenas (mutações)."
                   icon={RiInkBottleFill}
                 />
 
@@ -163,7 +163,7 @@ export default function Home() {
                 <IconCard
                   position="relative"
                   right="0.6rem"
-                  title="Curcuma"
+                  title="Cúrcuma"
                   desc="Possui capacidade antioxidante, atuando na diminuição da resposta inflamatória e fortalecendo o organismo."
                   icon={RiInkBottleLine}
                 />
@@ -344,7 +344,7 @@ export default function Home() {
             </Box>
           </Box>
           <Flex p={6} backgroundImage="url(./img/veg_pattern01.png)">
-            <Stack direction="column" mx="auto" w="100%" pt={6} spacing={28}>
+            <Stack direction="column" mx="auto" w="100%" pt={6} spacing={[28, 56]}>
 
               <RecipesCard 
                 title='Geleia de Frutas Vermelhas' 
@@ -365,6 +365,20 @@ export default function Home() {
                 subTitle='Leve, repleto de sabor e saudável' 
                 picture='./img/tilapia-espinafre.png'
                 url='/receita/tilapia-grelhada-espinafre-salteado'
+              />
+
+              <RecipesCard 
+                title='Panqueca de banana com aveia e linhaça' 
+                subTitle='Ótima opção para o café da manhã.' 
+                picture='./img/panqueca.png'
+                url='/receita/panqueca-banana-aveia-linhaca'
+              />
+
+              <RecipesCard 
+                title='Molho de tomate' 
+                subTitle='Uma delicia para seu macarrão' 
+                picture='./img/molho-tomate.png'
+                url='/receita/molho-tomate'
               />
 
             </Stack>
@@ -399,6 +413,7 @@ export default function Home() {
 
         <Footer />
       </main>
+
     </div>
   );
 }

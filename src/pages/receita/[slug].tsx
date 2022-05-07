@@ -42,7 +42,7 @@ export default function Recipes({params}){
 
 
     return(
-        <div>
+        <main className={styles.customContainer}>
           <Header/>
           <Flex>
             <Box w="full">
@@ -128,26 +128,29 @@ export default function Recipes({params}){
                   </OrderedList>
               </Box>
 
-              { recipe.creditsTitle && (
+              { (recipe.creditsTitle ) && (
                 <Box pt={7}  w="full">
-                  <a 
+                  <Box 
+                    as="a"
                     target="_blank" 
                     href={recipe.creditsUrl}
                     >
                       <HStack justify="flex-end">
                         <Box>
-                          <Text>
-                            Créditos: <Text as="span" fontWeight="bold">Tudo receitas</Text>
+                          <Text fontSize={['md', 'xl']} >
+                            Créditos: <Text as="span" fontWeight="bold">{recipe.creditsTitle}</Text>
                           </Text>
                         </Box>
-                        <Box pt={1}><Icon as={BiLinkExternal}/></Box>
+                        { recipe.creditsUrl && (
+                          <Box pt={1}><Icon as={BiLinkExternal}/></Box>
+                        )}
                       </HStack>
-                    </a>
+                    </Box>
                 </Box>
               )}
             </VStack>
           </Flex>
-        </div>
+        </main>
 
     );    
 }

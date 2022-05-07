@@ -46,7 +46,7 @@ export function Footer() {
             <Text as="b" pr={3} fontSize={['md', '2xl']}>
               Turma:
             </Text>
-            <Text fontSize={['md', '2xl']}>Nutrição - Noite</Text>
+            <Text fontSize={['md', '2xl']}>Nutrição - Noite [A]</Text>
           </Box>
         </Stack>
 

@@ -29,7 +29,7 @@ const team = [
   },
   {
     name: 'Rafael Marques',
-    pictureUrl: '',
+    pictureUrl: './img/team/rafael-marques.jpg',
   },
   {
     name: 'Juliana Kelly',

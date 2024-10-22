@@ -30,13 +30,13 @@ export function Footer() {
         top={10}
         py={12}
       >
-        <Stack p={6} spacing={4}>
+        {/* <Stack p={6} spacing={4}>
           <Box>
             <Text as="b" fontSize={['md', '3xl']}>
               Dhara Hentzy / CRN - 23103921
             </Text>
           </Box>
-        </Stack>
+        </Stack> */}
 
         <Stack p={6} spacing={4}>
           <Box>

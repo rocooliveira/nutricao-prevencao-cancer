@@ -194,7 +194,6 @@ const Slider = ({
       </Box>
 
       <Flex mt={`${gap / 2}px`} mx="auto" w="100%">
-        {/* VISIBILIDADE DOS BOTOES REMOVIDA */}
         <Button
           onClick={handleDecrementClick}
           onFocus={handleFocus}
@@ -202,7 +201,6 @@ const Slider = ({
           color="gray.200"
           variant="link"
           minW={0}
-          opacity={0}
         >
           <Icon as={BiChevronLeft} boxSize={9} />
           {/* <BiChevronLeft  /> */}
@@ -230,7 +228,6 @@ const Slider = ({
           variant="link"
           zIndex={2}
           minW={0}
-          opacity={0}
         >
           <Icon as={BiChevronRight} boxSize={9} />
 

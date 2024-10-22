@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Flex, Box, Stack, Image, Text, Icon } from '@chakra-ui/react';
+import { Flex, Box, Stack, HStack, Image, Text, Icon } from '@chakra-ui/react';
 import { RiInkBottleFill, RiInkBottleLine, RiTimeLine } from 'react-icons/ri';
 import {
   GiBroccoli,
@@ -409,15 +409,19 @@ export default function Home() {
               Integrantes desta equipe
             </Text> */}
           </Box>
-          <CardSlider gap={32}>
+          {/* <CardSlider gap={32}> */}
+          <HStack py={4}>
             {team.map((people, index) => (
               <ProfileCard
                 key={index}
                 name={people.name}
+                crn={people.crn}
                 pictureUrl={people.pictureUrl}
+                instagram={people.instagram}
               />
             ))}
-          </CardSlider>
+          </HStack>
+          {/* </CardSlider> */}
         </Stack>
 
         <Footer />

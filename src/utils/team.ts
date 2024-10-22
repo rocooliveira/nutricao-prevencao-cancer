@@ -1,7 +1,9 @@
 const team = [
   {
     name: 'Dhara Hentzy',
-    pictureUrl: './img/team/dhara.jpg',
+    crn: 'CRN - 23103921',
+    pictureUrl: './img/team/dharanutri.jpg',
+    instagram: 'https://www.instagram.com/nutridharahentzy',
   },
 ];
 

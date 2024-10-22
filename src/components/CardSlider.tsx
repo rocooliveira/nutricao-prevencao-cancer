@@ -140,7 +140,7 @@ const Slider = ({
 }) => {
   const [ref, { width }] = useBoundingRect(100);
 
-  if (typeof window !== "undefined") {  
+  if (typeof window !== 'undefined') {
     useLayoutEffect(
       () => initSliderWidth(Math.round(width)),
       [width, initSliderWidth]
@@ -193,7 +193,8 @@ const Slider = ({
         {children}
       </Box>
 
-      <Flex  mt={`${gap / 2}px`} mx="auto" w="100%">
+      <Flex mt={`${gap / 2}px`} mx="auto" w="100%">
+        {/* VISIBILIDADE DOS BOTOES REMOVIDA */}
         <Button
           onClick={handleDecrementClick}
           onFocus={handleFocus}
@@ -201,6 +202,7 @@ const Slider = ({
           color="gray.200"
           variant="link"
           minW={0}
+          opacity={0}
         >
           <Icon as={BiChevronLeft} boxSize={9} />
           {/* <BiChevronLeft  /> */}
@@ -228,6 +230,7 @@ const Slider = ({
           variant="link"
           zIndex={2}
           minW={0}
+          opacity={0}
         >
           <Icon as={BiChevronRight} boxSize={9} />
 

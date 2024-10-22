@@ -41,7 +41,7 @@ export function Footer() {
         <Stack p={6} spacing={4}>
           <Box>
             <Text as="b" fontSize={['md', '3xl']}>
-              BIBLIOGRAFIAS
+              BIBLIOGRAFIAS:
             </Text>
           </Box>
 

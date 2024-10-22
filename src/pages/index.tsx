@@ -395,31 +395,6 @@ export default function Home() {
           </Flex>
         </Stack>
 
-        <Stack py={8} px={6}>
-          <Box textAlign="center" pb={4}>
-            <Text
-              fontFamily="Fira Sans"
-              color="green.400"
-              fontSize={['2xl', '4xl']}
-              lineHeight="70%"
-            >
-              Alunos
-            </Text>
-            <Text fontSize={['2xl', '5xl']} fontWeight="bold">
-              Integrantes desta equipe
-            </Text>
-          </Box>
-          <CardSlider gap={32}>
-            {team.map((people, index) => (
-              <ProfileCard
-                key={index}
-                name={people.name}
-                pictureUrl={people.pictureUrl}
-              />
-            ))}
-          </CardSlider>
-        </Stack>
-
         <Footer />
       </main>
     </div>

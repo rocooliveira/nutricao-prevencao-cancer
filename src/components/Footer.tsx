@@ -16,7 +16,7 @@ import BibliographyListItem from './BibliographyListItem';
 
 export function Footer() {
   return (
-    <footer style={{ marginTop: -30 }}>
+    <footer style={{ marginTop: -40 }}>
       <Stack>
         <Box className={styles.footerOverlayMainWaves} />
         <Box className={styles.footerOverlayBlackWaves} />

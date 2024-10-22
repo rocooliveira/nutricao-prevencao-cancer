@@ -42,7 +42,7 @@ export default function Home() {
                 fontFamily="Fira Sans"
                 color="green.300"
               >
-                SEMINARIO MULTIDISCIPLINAR
+                Dhara Hentzy / CRN - 23103921
               </Text>
               <Text
                 fontSize={['3xl', '5xl']}
@@ -53,16 +53,19 @@ export default function Home() {
               </Text>
 
               <Text color="gray.500" fontSize={['md', '2xl']}>
-                O que você come pode afetar drasticamente muitos aspectos da sua saúde, incluindo o risco de 
-                desenvolver doenças crônicas como doenças cardíacas, diabetes e câncer.
+                O que você come pode afetar drasticamente muitos aspectos da sua
+                saúde, incluindo o risco de desenvolver doenças crônicas como
+                doenças cardíacas, diabetes e câncer.
               </Text>
 
               <Text color="gray.500" fontSize={['md', '2xl']}>
-                O desenvolvimento do câncer, em particular, mostrou ser fortemente influenciado pela sua dieta.
+                O desenvolvimento do câncer, em particular, mostrou ser
+                fortemente influenciado pela sua dieta.
               </Text>
-             
+
               <Text color="gray.500" fontSize={['md', '2xl']}>
-                Muitos alimentos contêm compostos benéficos que podem ajudar a diminuir o desenvolvimento do câncer.
+                Muitos alimentos contêm compostos benéficos que podem ajudar a
+                diminuir o desenvolvimento do câncer.
               </Text>
             </Stack>
           </Flex>
@@ -71,10 +74,7 @@ export default function Home() {
           <Flex direction="column">
             <Stack bg="white" w="100%" p={6}>
               <Box w={['100%', '50%']} mx="auto">
-                <Image 
-                  mx="auto" 
-                  src="./img/img1.jpg"
-                />
+                <Image mx="auto" src="./img/img1.jpg" />
               </Box>
               <Stack direction="row" justifyContent="center" pb={3}>
                 <Box>
@@ -312,9 +312,8 @@ export default function Home() {
           </Stack>
         </Stack>
 
-
         <Stack bg="green.300" pt={1}>
-          <Box 
+          <Box
             textAlign="center"
             bg="white"
             p={6}
@@ -335,8 +334,15 @@ export default function Home() {
             <Text fontSize={['2xl', '5xl']} fontWeight="bold">
               Sugestão de cardápio
             </Text>
-            <Text fontSize={['sm', 'xl']} fontWeight="bold" color="gray.500" mt={3} mb={4}>
-              Aproveite nossas dicas e prepare uma refeição saudável e apetitosa.
+            <Text
+              fontSize={['sm', 'xl']}
+              fontWeight="bold"
+              color="gray.500"
+              mt={3}
+              mb={4}
+            >
+              Aproveite minhas dicas e prepare uma refeição saudável e
+              apetitosa.
             </Text>
 
             <Box h={['5rem', '12rem']} overflow="hidden">
@@ -344,47 +350,50 @@ export default function Home() {
             </Box>
           </Box>
           <Flex p={6} backgroundImage="url(./img/veg_pattern01.png)">
-            <Stack direction="column" mx="auto" w="100%" pt={6} spacing={[28, 56]}>
-
-              <RecipesCard 
-                title='Geleia de Frutas Vermelhas' 
-                subTitle='Naturalmente doce e dispensa adição de açucar.' 
-                picture='./img/geleia-frutas-vermelhas.png'
-                url='/receita/geleia-frutas-vermelhas'
+            <Stack
+              direction="column"
+              mx="auto"
+              w="100%"
+              pt={6}
+              spacing={[28, 56]}
+            >
+              <RecipesCard
+                title="Geleia de Frutas Vermelhas"
+                subTitle="Naturalmente doce e dispensa adição de açucar."
+                picture="./img/geleia-frutas-vermelhas.png"
+                url="/receita/geleia-frutas-vermelhas"
               />
 
-              <RecipesCard 
-                title='Suflê de Brócolis' 
-                subTitle='Simples, rápido e delicioso!' 
-                picture='./img/sufle-de-brocolis.png'
-                url='/receita/sufle-brocolis'
+              <RecipesCard
+                title="Suflê de Brócolis"
+                subTitle="Simples, rápido e delicioso!"
+                picture="./img/sufle-de-brocolis.png"
+                url="/receita/sufle-brocolis"
               />
 
-              <RecipesCard 
-                title='Tilápia grelhada com espinafre salteado' 
-                subTitle='Leve, repleto de sabor e saudável' 
-                picture='./img/tilapia-espinafre.png'
-                url='/receita/tilapia-grelhada-espinafre-salteado'
+              <RecipesCard
+                title="Tilápia grelhada com espinafre salteado"
+                subTitle="Leve, repleto de sabor e saudável"
+                picture="./img/tilapia-espinafre.png"
+                url="/receita/tilapia-grelhada-espinafre-salteado"
               />
 
-              <RecipesCard 
-                title='Panqueca de banana com aveia e linhaça' 
-                subTitle='Ótima opção para o café da manhã.' 
-                picture='./img/panqueca.png'
-                url='/receita/panqueca-banana-aveia-linhaca'
+              <RecipesCard
+                title="Panqueca de banana com aveia e linhaça"
+                subTitle="Ótima opção para o café da manhã."
+                picture="./img/panqueca.png"
+                url="/receita/panqueca-banana-aveia-linhaca"
               />
 
-              <RecipesCard 
-                title='Molho de tomate' 
-                subTitle='Uma delicia para seu macarrão' 
-                picture='./img/molho-tomate.png'
-                url='/receita/molho-tomate'
+              <RecipesCard
+                title="Molho de tomate"
+                subTitle="Uma delicia para seu macarrão"
+                picture="./img/molho-tomate.png"
+                url="/receita/molho-tomate"
               />
-
             </Stack>
           </Flex>
         </Stack>
-
 
         <Stack py={8} px={6}>
           <Box textAlign="center" pb={4}>
@@ -413,7 +422,6 @@ export default function Home() {
 
         <Footer />
       </main>
-
     </div>
   );
 }
